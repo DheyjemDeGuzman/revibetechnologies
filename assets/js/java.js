@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-	$('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
 });
 $(window).scroll(function() {
   $('.fading').each(function() {
@@ -19,20 +19,37 @@ $.each( $('*'), function() {
         console.log("Wide Element: ", $(this), "Width: ", $(this).width()); 
     } 
 });
-window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-        document.getElementById("backTop").style.display = "block";
-    } else {
-        document.getElementById("backTop").style.display = "none";
-    }
-}
 
-// When the user clicks on the button, scroll to the top of the document
+$(document).ready(function(){
+
+    // hide #back-top first
+    $("#backTop").hide();
+    
+    // fade in #back-top
+    $(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $('#backTop').fadeIn();
+            } else {
+                $('#backTop').fadeOut();
+            }
+        });
+
+        $('#backTop').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    });
+
+});
+
+
 function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; 
+    document.documentElement.scrollTop = 0; 
 }
 
 
