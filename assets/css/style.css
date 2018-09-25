@@ -104,7 +104,7 @@ nav a:hover{
 	background-image: url("../images/background.jpg");
 	background-repeat: none;
 	background-size: cover;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 		
 }
 #about{
@@ -188,7 +188,7 @@ nav a:hover{
 	background-image: url("../images/team.jpg");
 	background-repeat: none;
 	background-size: cover;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	padding: 50px;
 	font-family:'Rubik', sans-serif;
 	display: grid;
@@ -334,7 +334,7 @@ position: relative;
 	background-image: url("../images/contact.jpg");
 	background-repeat: none;
 	background-size: cover;
-	/*background-attachment: fixed;*/
+	background-attachment: fixed;
 	font-family:'Rubik', sans-serif;
 	display: grid;
 	color: #EBEBEB;
@@ -483,3 +483,15 @@ nav a{
 }
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
+	#contact , #team , #home{
+		back
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {}
