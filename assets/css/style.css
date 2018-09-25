@@ -37,7 +37,7 @@ nav{
 
 }
 header .navbar.scrolled{
-	background-color: rgba(168, 168, 168, 0.91); /*rgba(190, 14, 14, 0.36)*/
+	background-color: rgba(168, 168, 168, 0.91);
 	color: black;
 
 }
@@ -76,7 +76,6 @@ nav a:hover{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 }#home > #homeCarousel > .carousel-inner > .carousel-item > p{
-	font-size: em;
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -228,7 +227,7 @@ nav a:hover{
 	
 }
 #team  h4{
-	color: #FEFCFF; /*hsl(0,0%,97%);*/
+	color: #FEFCFF; 
 	margin: 15px 0;
 		
 }
@@ -268,7 +267,6 @@ position: relative;
   letter-spacing: 20px;
 }
 
-/* When you mouse over the container, fade in the overlay title */
 .team-img:hover .overlay {
   opacity: 1;
 }
@@ -482,16 +480,3 @@ nav a{
 	text-align: center;
 }
 }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
-	#contact , #team , #home{
-		back
-	}
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {}
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {}
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {}
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {}
